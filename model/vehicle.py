@@ -8,6 +8,6 @@ def payload_ratio():
 def structural_ratio():
     return(mass_structural / (mass_structural + mass_propellant))
 
-def mf_over_mi():
+ def mf_over_mi():
     return(structural_ratio() + payload_ratio() * (1 - structural_ratio()))
 
